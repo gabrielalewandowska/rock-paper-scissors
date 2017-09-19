@@ -23,16 +23,14 @@ public class ResultActivity extends AppCompatActivity {
         randomNumberGenerator = new RandomNumberGenerator();
 
         userChoiceBox = (TextView) findViewById(R.id.text_user_choice);
-
         String userChoiceString = extras.getString("choice");
         userChoiceBox.setText( userChoiceString );
-        String randomComputerAnswer = game.getComputersChoice(randomNumberGenerator);
 
+        String randomComputerAnswer = game.getComputersChoice(randomNumberGenerator);
         computerChoiceBox = (TextView) findViewById(R.id.text_computer_choice);
         computerChoiceBox.setText(randomComputerAnswer);
 
         String comparisonResult = game.compare(userChoiceString, randomComputerAnswer);
-
         resultBox = (TextView) findViewById(R.id.text_result_string);
         resultBox.setText(comparisonResult);
 

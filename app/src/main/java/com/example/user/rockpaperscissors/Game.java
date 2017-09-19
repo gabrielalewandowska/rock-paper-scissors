@@ -45,7 +45,7 @@ public class Game {
 
         if (userInput.equals("rock") && computerChoice.equals("scissors")){
             return userWon;
-        } else if (userInput.equals("scissors")  && computerChoice.equals("paper")){
+        } else if (userInput.equals("scissors") && computerChoice.equals("paper")){
             return userWon;
         } else if (userInput.equals("paper") && computerChoice.equals("rock")){
             return userWon;
